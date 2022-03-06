@@ -178,7 +178,7 @@ playAt(word, position, direction) {
     console.log(this.grid);
     for (let x = 1; x <= 15; ++x){
         for(let y = 1; y <= 15; ++y){
-            let grid = this.getGrid();
+            const grid = this.getGrid();
             if (grid[y][x] === null || prevNodes[count].hasChildNodes()){
                 count++;
                 continue;
